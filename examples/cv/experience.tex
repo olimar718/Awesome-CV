@@ -8,43 +8,74 @@
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
+	\cventry
+	{Ingénieur logiciel} % Intitulé du poste
+	{Akkodis (en mission pour Thales)} % Organisation
+	{Gennevilliers, France} % Lieu
+	{Octobre 2025 - Présent} % Dates
+	{
+		\begin{cvitems} % Description(s) des tâches/responsabilités
+		\item{
+			Développement d'un framework \textbf{C++} dédié à l'orchestration de réseaux (systèmes satellites).
+		}
+		\item{
+			Collaboration au sein d'une équipe de 4 développeurs expérimentés.
+		}
+		\item{
+			\textbf{C++} : Refonte complète d'une bibliothèque de sérialisation/désérialisation (\textbf{JSON}, \textbf{Protobuf}).
+			\begin{itemize}
+				\item{Utilisation avancée de la \textbf{métaprogrammation} (templates).}
+				\item{Gestion de la représentation binaire des types primitifs (nombres \textbf{flottants}, signés, etc.).}
+				\item{Génération de code \textbf{C++} à partir d'un DSL via \textbf{Xtend}.}
+				\item{Test unitaires \textbf{GoogleTest} et tests d'intégration.}
+			\end{itemize}
+		}
+		\item{
+			Optimisation de l'environnement de développement et de la CI/CD :
+			\begin{itemize}
+				\item{Mise en place de \textbf{DevContainers} (VS Code)}
+				\item{Maintenance et évolution des \textbf{Dockerfiles} et des pipelines \textbf{Jenkinsfiles}.}
+			\end{itemize}
+		}
+		\end{cvitems}
+	}
 
 	\cventry
 	{Ingénieur logiciel embarqué} % Intitulé du poste
 	{SII, en mission chez MBDA} % Organisation
 	{Le Plessis-Robinson, France} % Lieu
-	{Février 2024 - Présent} % Dates
+	{Février 2024 - Octobre 2025} % Dates
 	{
 		\begin{cvitems} % Description(s) des tâches/responsabilités
 		\item{
-			Projet : Développement de plusieurs logiciels embarqués en \textbf{C++} et \textbf{Java (Swing)}, utilisant \textbf{IBM Rational Rhapsody} (Statecharts, \textbf{UML}) pour la génération de code
+			Projet : Logiciels embarqués en \textbf{C++} et \textbf{Java (Swing)}, utilisant \textbf{IBM Rational Rhapsody} (Statecharts, \textbf{UML})
 			\begin{itemize}
-					\item{Ces logiciels communiquent via un réseau \textbf{Ethernet} et un bus \textbf{1553}}
+					\item{Réseau \textbf{Ethernet} et bus \textbf{1553}}
 			\end{itemize}
 		}
 		\item{
 			\textbf{Département Ingénierie Logicielle (\emph{SE})} : Membre d'une équipe de 4 développeurs, avec pour principales responsabilités :
 			\begin{itemize}
-				\item{\textbf{C++}, \textbf{Java} (\textbf{Swing} : interface graphique) : Conception et développement de nouvelles fonctionnalités, refonte de fonctionnalités existantes issues de code \emph{legacy}, correction de bugs existants}
+				\item{\textbf{C++}, \textbf{Java} (\textbf{Swing} : interface graphique) : Conception, développement, refonte et correction de code \emph{legacy}}
 				\item{Tests d'intégration des logiciels sur \textbf{bancs de test} : utilisation de moyens de test (simulateurs propriétaires) pour tester le système}
-				\item{Génération personnalisée de \textbf{Linux Embarqué}}
+				\item{Génération personnalisée de \textbf{Linux Embarqué} (type Yocto)}
 				\item{Correction du \textbf{bug 2038} au niveau applicatif et au niveau du système d'exploitation linux}
 				\item{Recherche et compilation de \textbf{drivers} mis à jour (modules noyau) pour de nouvelles versions de noyaux Linux}
 				\item{Portage de \textbf{drivers} non mis à jour vers de nouveaux noyaux Linux (drivers écrits en \textbf{C})}
-				\item{Portage du code source vers une nouvelle version du compilateur (\textbf{gcc}) : résolution des problèmes de compilation dus aux évolutions des standards \textbf{C++}}
-				\item{\textbf{Intégration} de code source \textbf{C++} fournis par une autre équipe : validation de l'impact du changement d'environnement de compilation et d'exécution, diagnostic et remontée des dysfonctionnements éventuels pour correction}
+				\item{Migration vers une nouvelle version du compilateur (\textbf{gcc} 4 -> 12) : résolution des problèmes de compilation dus aux évolutions}
+				\item{\textbf{Intégration} de code source \textbf{C++} fournis par une autre équipe : validation de l'impact du changement d'environnement}
 			\end{itemize}
 		}
 		\item{
 			Travail réalisé de manière autonome et à mon initiative, pour \textbf{améliorer les processus de travail et la qualité des livrables du projet} :
 			\begin{itemize}
 				\item{Amélioration de la configuration réseau (\textbf{TCP/IP}) du système}
-				\item{Utilisation de langages de script : \textbf{Python}, \textbf{PowerShell}, \textbf{bash} et \textbf{Makefile} pour l'automatisation des tests, de la compilation et de la documentation}
-				\item{Automatisation de tests d'une interface graphique \textbf{Java Swing}. Utilisation de \emph{Robot} pour cliquer sur boutons, utilisation de \emph{java.lang.reflect} pour obtenir la valeur des champs}
+				\item{\textbf{Python}, \textbf{PowerShell}, \textbf{bash} et \textbf{Makefile} pour l'automatisation des tests, de la compilation et de la documentation}
+				\item{Automatisation de tests d'une interface graphique \textbf{Java Swing} avec \emph{Robot} et \emph{java.lang.reflect}}
 				\item{Automatisation de \textbf{IBM Rational Rhapsody} via l'API \textbf{Java}}
 				\item{Automatisation de \textbf{Wireshark} via l'interface en ligne de commande \textbf{tshark}}
-				\item{Écriture d'un générateur de code \textbf{C} en Python pour décoder des payloads réseau en structures \textbf{C}. \textbf{C++} : Génération de tests unitaires aléatoires pour le code généré}	
-				\item{Développement de scripts \textbf{bash} très robustes pour la synchronisation temporelle \textbf{NTP}, afin de résoudre des problèmes de synchronisation récurrents}
+				\item{Écriture d'un générateur de code \textbf{C} en Python pour la sérialisation/désérialisation. \textbf{C++} : Génération de tests unitaires aléatoires pour le code généré}	
+				\item{Scripts \textbf{bash} très robustes pour la synchronisation temporelle \textbf{NTP}}
 			\end{itemize}
 		}
 		\end{cvitems}
